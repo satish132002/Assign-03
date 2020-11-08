@@ -25,6 +25,17 @@ import unittest
 
 
 def minimum_bracket_addition(s):
+    a1=0
+    b1=0
+    for i in range(len(s)):
+        if(s[i]=='('):
+            a1=a1+1
+        else:
+            a1=a1-1
+        if(a1==-1):
+            a1=a1+1
+            b1=b1+1
+    return a1+b1
 
 
 

@@ -27,6 +27,13 @@ import unittest
 
 
 def sort_by_parity(lst, p):
+    l1=[]
+    for j in range(len(p)):
+        l1.append(0)
+    for i in range(len(p)):
+        l1.pop(p[i])
+        l1.insert(p[i],lst[i])
+    return l1
  
 
 

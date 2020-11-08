@@ -17,7 +17,6 @@ Example 1
 Input
 s = "abcdef"
 n = 2
-
 Output
 ["ab", "cd", "ef"]
 """
@@ -29,7 +28,13 @@ import unittest
 
 
 def chunky_strings(s, n):
-  
+    l=[]
+    i=0
+    while i<len(s):
+        l.append(s[i:i+n])
+        i=i+n
+    return l
+
 
 
 # DO NOT TOUCH THE BELOW CODE

@@ -44,6 +44,7 @@ import unittest
 
 
 def rotate_list(nums, k):
+    return nums[k:]+nums[:k]
    
 
 
